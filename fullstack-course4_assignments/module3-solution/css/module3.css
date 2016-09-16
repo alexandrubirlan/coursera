@@ -1,0 +1,53 @@
+body {
+    background-color: #e6e6e6;
+}
+
+.navbar {
+    background-color: #245269;
+}
+
+.navbar-brand span {
+    color: #f9f9f9;
+}
+
+.navbar .navbar-toggle {
+    background-color: #f9f9f9;
+    border-color: #02243c;
+}
+
+/*Collapsable menu*/
+#menu-categories {
+    background-color: #245269;
+}
+
+#menu-categories li a {
+    color: #02243c;
+    /*background-color: #f9f9f9;*/
+}
+
+#menu-categories li.active a {
+    color: #f9f9f9;
+    background-color: #02243c;
+}
+
+#menu-categories li a:hover {
+    color: #f9f9f9;
+    background-color: #02243c;
+}
+
+
+/* Content sections */
+
+h1 {
+    color: #02243c;
+}
+
+
+
+div.really-tall {
+    height: 1000px;
+}
+
+div.chicken {
+    background-color: #f9f9f9;
+}
