@@ -1,0 +1,21 @@
+<div class="row">
+  <dl ng-repeat="item in foundList.items" class="col-md-3 list-item">
+    <dt>
+      <div>
+        ({{item.short_name}}) {{item.name}}
+      </div>
+      <div>
+        <button type="button" name="remove" class="btn btn-default btn-xs"
+          ng-click="foundList.removeItem($index)">
+          <i class="glyphicon glyphicon-remove"></i> Don't want this one!
+        </button>
+      </div>
+    </dt>
+    <dd>
+      {{item.description}}
+    </dd>
+  </dl>
+  <div class="col-md-12" ng-if="foundList.items.length === 0">
+    <p class="text-info">Nothing found</p>
+  </div>
+</div>
