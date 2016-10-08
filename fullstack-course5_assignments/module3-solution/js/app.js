@@ -24,11 +24,11 @@
       } else {
         narrowCtrl.found = [];
       }
-    }
+    };
 
     narrowCtrl.removeItem = function (index) {
       narrowCtrl.found.splice(index, 1);
-    }
+    };
 
   }
 
@@ -42,7 +42,7 @@
       var httpRequest = {
         method: 'GET',
         url: APIPath + 'menu_items.json'
-      }
+      };
 
       return $http(httpRequest).then(function (result) {
         // process result and only keep items that match
@@ -57,7 +57,7 @@
         // return processed items
         return foundItems;
       });
-    }
+    };
   }
 
   function FoundItemsDirectiveController() {
@@ -65,7 +65,7 @@
 
     foundList.removeItem = function (index) {
       foundList.onRemove({index: index});
-    }
+    };
 
   }
 
