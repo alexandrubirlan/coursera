@@ -1,4 +1,56 @@
 body {
-  font-size: 1xpx;
+  font-size: 10px;
   font-family: 'Oxygen', sans-serif;
+}
+
+a {
+  color: rgb(55, 149, 144);
+}
+
+a:hover {
+  color: rgb(55, 149, 144);
+}
+
+.title {
+  font-weight: bold;
+}
+
+.sub-title {
+  font-weight: bold;
+}
+
+.welcome {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 100px;
+}
+
+.welcome-link {
+  font-size: 2em;
+  text-align: center;
+}
+
+.category {
+  margin-top: 50px;
+  height: 150px;
+  /*border: solid 1px;*/
+}
+
+.category:hover {
+  color: rgb(55, 149, 144);
+  font-weight: bold;
+}
+
+.category-name {
+  font-size: 2em;
+  font-weight: bold;
+  color: rgb(55, 149, 144);
+}
+
+.short-name {
+  font-size: 3em;
+}
+
+.name {
+  font-size: 2em;
 }

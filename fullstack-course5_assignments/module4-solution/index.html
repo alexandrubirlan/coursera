@@ -4,17 +4,42 @@
     <meta charset="utf-8">
     <title>Menu Application</title>
 
-    <link rel="stylesheet" href="css/styles.css">
+    <!-- Boostrap -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
 
     <!-- Custom Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Oxygen:400,300,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lora" rel="stylesheet" type="text/css">
 
+
+    <link rel="stylesheet" href="css/styles.css">
+
   </head>
   <body>
-    <h1>Menu Browser</h1>
+    <div>
+      <h1 class="title text-center">Menu Browser</h1>
+    </div>
+    <div>
+        <ui-view></ui-view>
+    </div>
 
-    <script type="text/javascript" src="js/angular.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+
+    <!-- JS Imports -->
+    <script type="text/javascript" src="lib/angular.min.js"></script>
+    <script type="text/javascript" src="lib/angular-ui-router.min.js"></script>
+
+
+    <script type="text/javascript" src="src/js/menuapp.module.js"></script>
+    <script type="text/javascript" src="src/js/data.module.js"></script>
+    <script type="text/javascript" src="src/js/menudata.constants.js"></script>
+    <script type="text/javascript" src="src/js/menudata.service.js"></script>
+    <script type="text/javascript" src="src/js/routes.js"></script>
+
+    <script type="text/javascript" src="src/js/categories/categories-list.controller.js"></script>
+    <script type="text/javascript" src="src/js/categories/categories.component.js"></script>
+
+    <script type="text/javascript" src="src/js/items/items-list.controller.js"></script>
+    <script type="text/javascript" src="src/js/items/items.component.js"></script>
   </body>
 </html>

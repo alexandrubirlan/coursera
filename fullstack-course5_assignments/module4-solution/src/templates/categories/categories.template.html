@@ -1,0 +1,9 @@
+<div class="category col-md-2" ng-repeat="category in $ctrl.getAllCategories()" ui-sref="items({shortName: category.short_name})">
+  <div class="short-name">
+    <p class="text-center">{{category.short_name}}</p>
+  </div>
+  <div class="name">
+    <p class="text-center">{{category.name}}</p>
+  </div>
+
+</div>
